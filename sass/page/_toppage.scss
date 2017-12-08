@@ -1,0 +1,14 @@
+.section1 {
+    background-image: url(../img/sp_leftkumo.png), url(../img/sp_rightkumo.png),url(../img/sp_bg.png);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: calc(220/442*100%), calc(280/525*100%), contain;
+    background-position: left top, right bottom, center center;
+    .top-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto 40px;
+        width: calc(300/664*100%);
+    }
+}

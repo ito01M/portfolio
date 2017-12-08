@@ -1,0 +1,12 @@
+#header {
+    width: 100%;
+    position: relative;
+}
+.top-container {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    display: none;
+    background-color: #eee;
+    z-index: 9;
+}
