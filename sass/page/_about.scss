@@ -1,4 +1,74 @@
-.section2 {
-     background: url(../img/sp_bg.png);
-    
+.about-wrap {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/about_bg.png);
+    background-size: 10px 10px;
+    padding: 40px 0 180px;
+    .item-box {    
+        position: relative;
+        width: calc(280/320*100%);
+        margin: 0 auto;
+        background-color: #fdfdfd;
+        border-radius: 4px;
+        .title-container {
+            .sec-title {
+                display: flex;
+                justify-content: center;
+                h2 {
+                    width: 280px;
+                    display: block;
+                    text-align: center;
+                    margin: 20px 0 0;
+                    padding-bottom: 8px;
+                    font-size: 2.4rem;
+                    font-weight: normal;
+                    border-bottom: 2px dotted #000;
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            .sub-title {
+                padding-bottom: 40px;
+                p {
+                    display: block;
+                    text-align: center;
+                    margin: 12px 0;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .about-container {
+            .about-img {
+                width: calc(254/762*100%);
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+            .about-txt {
+                width: calc(300/320*100%);
+                margin: 0 auto;
+                p {
+                    padding-bottom: 20px;
+                    line-height: 1.6;
+                }
+                text-align: center;
+                .a-name {
+                    line-height: 1.6;
+                    span {
+                        font-size: 2.0rem;
+                        font-weight: bold;
+                    }
+                }
+                .a-txt01,
+                .a-txt02
+                {
+                    span {
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
 }

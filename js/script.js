@@ -1,6 +1,10 @@
 $(function () {
     $(".nav-btn").click(function () {
-        $(".top-container").stop().fadeToggle("1000");
+        $(".nav-container").stop().slideToggle(200);
         $(this).toggleClass("close");
+
+    });
+    $(".gnav li a").click(function () {
+        $(".nav-container").slideUp();
     });
 });

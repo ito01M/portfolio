@@ -5,6 +5,8 @@
 @import "base/reset";
 @import "base/base";
 
+//jquery
+@import "js/fullpage";
 //レイアウト
 @import "layout/wrapper";
 @import "layout/nav";
@@ -20,5 +22,4 @@
 @import "page/work";
 @import "page/skill";
 
-//jquery
-@import "js/fullpage";
+
