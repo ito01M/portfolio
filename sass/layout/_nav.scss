@@ -15,7 +15,6 @@
         background-color: transparent;
         border: none;
         z-index: 10;
-      
     }
 }
 
@@ -84,15 +83,21 @@
 //    }
 //}
 .fp-controlArrow.fp-prev {
+    background: url(../../img/left_ico.svg) no-repeat left;
     left: 5px;
-    width: 0;
-    border-width: 18.5px 15px 18.5px 0;
+    top: 55%;
+    width: 30px;
+    height: 30px;
+//    border-width: 18.5px 15px 18.5px 0;
     border-color: transparent #000 transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
-    right: 5px;
-    border-width: 18.5px 0 18.5px 15px;
+    background: url(../../img/right_ico.svg) no-repeat right;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    top: 55%;
     border-color: transparent transparent transparent #000;
 }
 
@@ -102,19 +107,33 @@
         justify-content: center;
         padding: 15px 0;
         list-style-type: none;
-        
-//        li {
-//            list-style-type: none;
-//            width: 40px;
-//            height: 40px;
-//            margin-right: 24px;
-//            a {
-//                display: block;
-//                text-decoration: none;
-//            }
-//        }
-//        li:last-child {
-//            margin-right: 0;
-//        }
+        li {
+            width:48px;
+            height: 48px;
+            text-indent: -9999px;
+            a {
+                display: block;
+                text-decoration: none;
+                line-height: 48px;
+            }
+        }
+        .mail-btn {
+            background: url(../img/mail_btn.svg) no-repeat;
+            background-size: 48px 48px;
+            margin-right: 8px;
+        }
+        .mail-btn:hover {
+            background-image: url(../img/mail_btn02.svg);
+            background-size: 48px 48px;
+        }
+        .twi-btn {
+            background: url(../img/twi_btn.svg) no-repeat;
+            background-size: 48px 48px;
+            margin-left: 8px;
+        }
+        .twi-btn:hover {
+            background-image: url(../img/twi_btn02.svg);
+            background-size: 48px 48px;
+        }
     }
 }

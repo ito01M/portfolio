@@ -1,15 +1,26 @@
 .top-wrap {
-    height: 100%;
-    background-image: url(../img/sp_leftkumo.png), url(../img/sp_rightkumo.png),url(../img/sp_bg.png);
+
+    background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
     background-repeat: no-repeat, no-repeat, repeat;
-    background-size: calc(220/442*100%), calc(220/525*100%), 320px 500px;
-    background-position: left top, right 0px bottom 90px, center center;
+    background-size: 230px 173px, 280px 186px, 320px 500px;
+    background-position: left top 68px, right 0px bottom 40px, center center;
     .top-logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60%;
+        height: 50%;
         margin: 0 auto 40px;
-        width: calc(300/664*100%);
+        width: calc(280/664*100%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-wrap {
+        background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
+        background-size: calc(455/1365*100%), calc(470/1196*100%);
+        background-position: left top 68px, right 0px bottom 40px, center center;
+        .top-logo {
+            width: 332px;
+        }
     }
 }
