@@ -14,33 +14,37 @@
 <body>
 
     <header id="header">
-        <div class="btn-wrap">
-            <button class="nav-btn">
-                menu
-                 </button>
-        </div>
-
-        <div class="nav-container">
-            <nav class="gnav">
-                <ul>
-                    <li date-menuanchor="page1"><a href="#page/slide1">TOP</a></li>
-                    <li date-menuanchor="page2"><a href="#page/slide2">ABOUT</a></li>
-                    <li date-menuanchor="page3"><a href="#page/slide3">SKILL</a></li>
-                    <li date-menuanchor="page4"><a href="#page/slide4">WORK</a></li>
-                </ul>
-            </nav>
-
-            <div class="contact-area">
-                <ul>
-                    <li class="mail-btn">
-
-                        <a href="#">mail</a>
-                    </li>
-                    <li class="twi-btn">
-                        <a href="#">twitter</a>
-
-                    </li>
-                </ul>
+        <div class="head-wrap">
+            <div class="btn-wrap">
+                <button class="nav-btn">
+                    menu
+                     </button>
+            </div>
+            
+            <div class="nav-container">
+                <div class="inner">
+                    <nav class="gnav">
+                        <ul>
+                            <li date-menuanchor="page1"><a href="#page/slide1">TOP</a></li>
+                            <li date-menuanchor="page2"><a href="#page/slide2">ABOUT</a></li>
+                            <li date-menuanchor="page3"><a href="#page/slide3">SKILL</a></li>
+                            <li date-menuanchor="page4"><a href="#page/slide4">WORK</a></li>
+                        </ul>
+                    </nav>
+                                
+                    <div class="contact-area">
+                        <ul>
+                            <li class="mail-btn">
+                                
+                                <a href="#">mail</a>
+                            </li>
+                            <li class="twi-btn">
+                                <a href="#">twitter</a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -49,9 +53,12 @@
     <main id="fullpage-wrap">
         <div class="section section1">
             <div class="slide top-wrap" data-anchor="slide1">
-                <h1 class="top-logo">
-                    <img src="img/top_logo.png" alt="">
-                </h1>
+
+                <div class="top-logo">
+                    
+                    <div class="logo-img">LOGO</div>
+                    
+                </div>
             </div>
             <div class="slide" data-anchor="slide2">
 
@@ -77,7 +84,7 @@
                                     北海道芸術デザイン専門学校<br>インテリアコーディネーション専攻
                                 </p>
                                 <p class="a-txt01">
-                                    <span>職務経workw歴</span><br> 接客販売・事務職/データ管理
+                                    <span>職務経歴</span><br> 接客販売・事務職/データ管理
                                 </p>
                                 <p class="a-txt02">
                                     <span>現　在</span><br> 今年7月からWEBスダディサッポロのスマホ・PCサイトデザイン科にて,サイトデザインやコーディングを勉強しています。
@@ -171,9 +178,9 @@
                                 </ul>
                             </div>
                             <div class="work-box02">
-                               <div class="work-title">
-                                <p>Banner</p>
-                            </div>
+                                <div class="work-title">
+                                    <p>Banner</p>
+                                </div>
                                 <ul class="box02">
                                     <li>
                                         <a href="img/work_02.jpg"><img src="img/work_02.jpg" width="100" height="100" alt="photo1"></a>
@@ -207,7 +214,7 @@
     </footer>
 
 
-
+    <!---->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script src="js/jquery.easings.min.js"></script>
     <script src="js/scrolloverflow.min.js"></script>
@@ -218,7 +225,20 @@
         $(function() {
             $('#fullpage-wrap').fullpage({
                 anchors: ['page'],
-                scrollOverflow: true
+                scrollOverflow: true,
+                	onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+		var leavingSlide = $(this);
+
+		//leaving the first slide of the 2nd Section to the right
+		if(index == 1 && slideIndex == 0 && direction == 'right'){
+			alert("Leaving the fist slide!!");
+		}
+
+		//leaving the 3rd slide of the 2nd Section to the left
+		if(index == 1 && slideIndex == 1 && direction == 'left'){
+			alert("Going to slide 2! ");
+		}
+	}
             });
 
         });

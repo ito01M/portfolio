@@ -88,7 +88,7 @@
     top: 55%;
     width: 30px;
     height: 30px;
-//    border-width: 18.5px 15px 18.5px 0;
+    //    border-width: 18.5px 15px 18.5px 0;
     border-color: transparent #000 transparent transparent;
 }
 
@@ -108,7 +108,7 @@
         padding: 15px 0;
         list-style-type: none;
         li {
-            width:48px;
+            width: 48px;
             height: 48px;
             text-indent: -9999px;
             a {
@@ -136,4 +136,81 @@
             background-size: 48px 48px;
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-btn {
+        display: none;
+    }
+    .nav-container {
+        display: block!important;
+        top: 0;
+        background-color: transparent;
+        .inner {
+            display: flex !important;
+            justify-content: flex-end;
+            margin: 0 20px;
+            height: 80px;
+        }
+    }
+    .gnav {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                height: 80px;
+                margin-right: 32px;
+                a {
+                    text-decoration: none;
+                    font-size: 2.4rem;
+                    
+                    border-bottom: none;
+                    color: #000;
+                }
+            }
+            li:hover {
+                background-color: transparent;
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+    //    .contact-area {
+    //        
+    //    ul {
+    //        display: flex;
+    //        justify-content: center;
+    //        padding: 15px 0;
+    //        list-style-type: none;
+    //        li {
+    //            width: 48px;
+    //            height: 48px;
+    //            text-indent: -9999px;
+    //            a {
+    //                display: block;
+    //                text-decoration: none;
+    //                line-height: 48px;
+    //            }
+    //        }
+    //        .mail-btn {
+    //            background: url(../img/mail_btn.svg) no-repeat;
+    //            background-size: 48px 48px;
+    //            margin-right: 8px;
+    //        }
+    //        .mail-btn:hover {
+    //            background-image: url(../img/mail_btn02.svg);
+    //            background-size: 48px 48px;
+    //        }
+    //        .twi-btn {
+    //            background: url(../img/twi_btn.svg) no-repeat;
+    //            background-size: 48px 48px;
+    //            margin-left: 8px;
+    //        }
+    //        .twi-btn:hover {
+    //            background-image: url(../img/twi_btn02.svg);
+    //            background-size: 48px 48px;
+    //        }
+    //    }
+    //}
 }

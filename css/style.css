@@ -408,6 +408,111 @@ html.fp-enabled,
     background-image: url(../img/twi_btn02.svg);
     background-size: 48px 48px; }
 
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none; }
+  .nav-container {
+    display: block !important;
+    top: 0;
+    background-color: transparent; }
+    .nav-container .inner {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin: 0 20px;
+      height: 80px; }
+  .gnav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .gnav ul li {
+      height: 80px;
+      margin-right: 32px; }
+      .gnav ul li a {
+        text-decoration: none;
+        font-size: 2.4rem;
+        border-bottom: none;
+        color: #000; }
+    .gnav ul li:hover {
+      background-color: transparent; }
+      .gnav ul li:hover a {
+        color: #000; } }
+
+.work-container {
+  margin-top: 40px;
+  width: 100%; }
+  .work-container .work-title {
+    width: 180px;
+    font-size: 2.0rem;
+    border-bottom: 3px double #000;
+    margin: 20px auto;
+    text-align: center; }
+    .work-container .work-title p {
+      padding-bottom: 12px;
+      font-weight: normal; }
+  .work-container .work-box01 {
+    margin: 40px auto;
+    max-width: 280px;
+    padding-bottom: 40px; }
+    .work-container .work-box01 ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .work-container .work-box01 ul li {
+        margin-right: 10px;
+        list-style-type: none; }
+      .work-container .work-box01 ul li:last-child {
+        margin-right: 0; }
+    .work-container .work-box01 .box01-top,
+    .work-container .work-box01 .box01-bottom {
+      padding-bottom: 20px; }
+  .work-container .work-box02 {
+    margin: 40px auto;
+    max-width: 280px;
+    padding-bottom: 40px; }
+    .work-container .work-box02 ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .work-container .work-box02 ul li {
+        margin-right: 10px;
+        list-style-type: none; }
+      .work-container .work-box02 ul li:last-child {
+        margin-right: 0; }
+    .work-container .work-box02 .box01-top,
+    .work-container .work-box02 .box01-bottom {
+      padding-bottom: 20px; }
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(2, 19, 31, 0.5); }
+
+#photo {
+  position: fixed;
+  background-color: #ff0;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -125px;
+  width: 300px;
+  height: 250px; }
+
 #footer {
   width: 100%;
   height: 40px;
@@ -427,32 +532,41 @@ html.fp-enabled,
   height: 68px;
   z-index: 8; }
 
+@media screen and (min-width: 768px) {
+  #header {
+    background-color: transparent;
+    float: left;
+    height: 80px; }
+  .head-wrap {
+    margin: 0 auto;
+    max-width: 1170px; } }
+
 .top-wrap {
   background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: 230px 173px, 280px 186px, 320px 500px;
   background-position: left top 68px, right 0px bottom 40px, center center; }
-  .top-wrap .top-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 50%;
-    margin: 0 auto 40px;
-    width: calc(280/664*100%); }
+  .top-wrap .top-logo .logo-img {
+    height: 500px;
+    margin: 0 auto;
+    background: url(../img/sp_top_logo.png) no-repeat center center;
+    background-size: calc(500/996*100%);
+    text-indent: -9999px; }
 
 @media screen and (min-width: 768px) {
   .top-wrap {
-    background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
-    background-size: calc(455/1365*100%), calc(470/1196*100%);
-    background-position: left top 68px, right 0px bottom 40px, center center; }
+    background-image: url(../img/kumo_bottom.png), url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
+    background-size: calc(1770/2196*100%), calc(355/1365*100%), calc(370/1196*100%), 320px 500px;
+    background-position: left bottom 10px, left top, right 0px bottom 40px, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat; }
     .top-wrap .top-logo {
-      width: 332px; } }
+      background-image: url(../img/top_logo.png);
+      background-size: 375px 288px;
+      background-repeat: no-repeat;
+      height: 100%;
+      background-position: center center; }
+      .top-wrap .top-logo .logo-img {
+        display: none; } }
 
 .about-wrap {
   width: 100%;
@@ -504,13 +618,68 @@ html.fp-enabled,
       .about-wrap .item-box .about-container .about-txt .a-name {
         line-height: 1.6; }
         .about-wrap .item-box .about-container .about-txt .a-name span {
-          font-size: 2.0rem;
-          font-weight: bold; }
+          font-size: 2.0rem; }
       .about-wrap .item-box .about-container .about-txt .a-txt01 span,
       .about-wrap .item-box .about-container .about-txt .a-txt02 span {
         font-size: 1.8rem;
-        font-weight: bold;
         line-height: 1.8; }
+
+@media screen and (min-width: 768px) {
+  .about-wrap {
+    background-image: url(../../img/about_kumo.png), url(../../img/about_bg_top.png), url(../img/bg_line.png), -webkit-gradient(linear, left top, right top, color-stop(50%, #dc89c0), color-stop(50%, #c7de6a));
+    background-image: url(../../img/about_kumo.png), url(../../img/about_bg_top.png), url(../img/bg_line.png), -webkit-linear-gradient(left, #dc89c0 50%, #c7de6a 50%);
+    background-image: url(../../img/about_kumo.png), url(../../img/about_bg_top.png), url(../img/bg_line.png), -o-linear-gradient(left, #dc89c0 50%, #c7de6a 50%);
+    background-image: url(../../img/about_kumo.png), url(../../img/about_bg_top.png), url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 100%, 100% 50%, cover;
+    background-position: left top, center center, bottom bottom, bottom bottom;
+    padding: 0;
+    height: 100%; }
+    .about-wrap .item-box {
+      max-width: 1170px;
+      background-color: transparent; }
+      .about-wrap .item-box .title-container .sec-title h2 {
+        margin: 100px 0 0;
+        font-size: 3.6rem; }
+        .about-wrap .item-box .title-container .sec-title h2 span {
+          font-size: 4.6rem; }
+      .about-wrap .item-box .title-container .sub-title {
+        padding-bottom: 45px; }
+        .about-wrap .item-box .title-container .sub-title p {
+          display: block;
+          text-align: center;
+          margin: 12px 0;
+          font-size: 1.8rem; }
+      .about-wrap .item-box .about-container {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0 40px; }
+        .about-wrap .item-box .about-container .about-img {
+          max-width: 224px;
+          padding-bottom: 0;
+          margin: 50px 0 0 0; }
+        .about-wrap .item-box .about-container .about-txt {
+          width: calc(400/1170*100%);
+          margin: 0  10px 0 100px;
+          text-align: left; }
+          .about-wrap .item-box .about-container .about-txt p {
+            font-size: 1.4rem;
+            padding-bottom: 16px;
+            line-height: 1.6; }
+          .about-wrap .item-box .about-container .about-txt .a-name {
+            line-height: 1.6; }
+            .about-wrap .item-box .about-container .about-txt .a-name span {
+              font-size: 2.0rem;
+              font-weight: normal; }
+          .about-wrap .item-box .about-container .about-txt .a-txt01 span,
+          .about-wrap .item-box .about-container .about-txt .a-txt02 span {
+            font-size: 1.8rem;
+            line-height: 1.6; } }
 
 .work-wrap {
   height: 100%;
@@ -698,6 +867,47 @@ html.fp-enabled,
           text-align: center; } }
 
 @media screen and (min-width: 769px) {
+  .skill-wrap {
+    height: 100%;
+    background: url(../../img/skill_bg.png) no-repeat center, url(../img/bg_line.png), -webkit-gradient(linear, left top, right top, color-stop(50%, #dc89c0), color-stop(50%, #c7de6a));
+    background: url(../../img/skill_bg.png) no-repeat center, url(../img/bg_line.png), -webkit-linear-gradient(left, #dc89c0 50%, #c7de6a 50%);
+    background: url(../../img/skill_bg.png) no-repeat center, url(../img/bg_line.png), -o-linear-gradient(left, #dc89c0 50%, #c7de6a 50%);
+    background: url(../../img/skill_bg.png) no-repeat center, url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    padding-bottom: 40px; }
+    .skill-wrap .item-box {
+      width: calc(300/320*100%);
+      background-color: transparent;
+      border-radius: 0; }
+      .skill-wrap .item-box .title-container {
+        margin: 0 10px; }
+        .skill-wrap .item-box .title-container .sec-title {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .skill-wrap .item-box .title-container .sec-title h2 {
+            width: 280px;
+            display: block;
+            text-align: center;
+            margin: 20px 0 0;
+            padding-bottom: 8px;
+            padding: 0 10px 8px;
+            font-size: 2.4rem;
+            font-weight: normal;
+            border-bottom: 2px dotted #000; }
+            .skill-wrap .item-box .title-container .sec-title h2 span {
+              font-size: 3.2rem; }
+      .skill-wrap .item-box .sub-title {
+        padding-bottom: 40px; }
+        .skill-wrap .item-box .sub-title p {
+          display: block;
+          text-align: center;
+          margin: 12px 0;
+          font-size: 1.8rem; }
   .skill-container {
     max-width: 1170px;
     margin: 0 auto;

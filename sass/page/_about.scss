@@ -55,16 +55,84 @@
                     line-height: 1.6;
                     span {
                         font-size: 2.0rem;
-                        font-weight: bold;
                     }
                 }
                 .a-txt01,
-                .a-txt02
-                {
+                .a-txt02 {
                     span {
                         font-size: 1.8rem;
-                        font-weight: bold;
                         line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-wrap {
+        
+        background-image: url(../../img/about_kumo.png), url(../../img/about_bg_top.png), url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 100% 100%, 100% 50%, cover;
+        background-position: left top, center center, bottom bottom, bottom bottom;
+        padding: 0;
+        height: 100%;
+        .item-box {
+            max-width: 1170px;
+            background-color: transparent;
+            .title-container {
+                .sec-title {
+                    h2 {
+                        margin: 100px 0 0;
+                        font-size: 3.6rem;
+                        span {
+                            font-size: 4.6rem;
+                        }
+                    }
+                }
+                .sub-title {
+                    padding-bottom: 45px;
+                    p {
+                        display: block;
+                        text-align: center;
+                        margin: 12px 0;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .about-container {
+                 position: relative;
+                display: flex;
+                justify-content: center;
+                margin: 0 40px;
+                .about-img {
+                    max-width: 224px;
+                    padding-bottom: 0;
+                    margin: 50px 0 0 0;
+                }
+                .about-txt {
+                    width: calc(400/1170*100%);
+                    margin: 0  10px 0 100px;
+                    p {
+                        font-size: 1.4rem;
+                        padding-bottom: 16px;
+                        line-height: 1.6;
+                    }
+                    text-align: left;
+                    .a-name {
+                        line-height: 1.6;
+                        span {
+                            font-size: 2.0rem;
+                            font-weight: normal;
+                        }
+                    }
+                    .a-txt01,
+                    .a-txt02 {
+                        span {
+                            font-size: 1.8rem;
+                            line-height: 1.6;
+                        }
                     }
                 }
             }

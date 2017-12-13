@@ -1,26 +1,34 @@
 .top-wrap {
-
     background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
     background-repeat: no-repeat, no-repeat, repeat;
     background-size: 230px 173px, 280px 186px, 320px 500px;
     background-position: left top 68px, right 0px bottom 40px, center center;
     .top-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        margin: 0 auto 40px;
-        width: calc(280/664*100%);
+        .logo-img {
+            height: 500px;
+            margin: 0 auto;
+            background: url(../img/sp_top_logo.png) no-repeat center center;
+            background-size: calc(500/996*100%);
+            text-indent: -9999px;
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
     .top-wrap {
-        background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
-        background-size: calc(455/1365*100%), calc(470/1196*100%);
-        background-position: left top 68px, right 0px bottom 40px, center center;
+        background-image: url(../img/kumo_bottom.png), url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
+        background-size: calc(1770/2196*100%), calc(355/1365*100%), calc(370/1196*100%), 320px 500px;
+        background-position: left bottom 10px, left top, right 0px bottom 40px, center center;
+        background-repeat: no-repeat, no-repeat, no-repeat, repeat;
         .top-logo {
-            width: 332px;
+            background-image: url(../img/top_logo.png);
+            background-size: 375px 288px;
+            background-repeat: no-repeat;
+            height: 100%;
+            background-position: center center;
+            .logo-img {
+                display: none;
+            }
         }
     }
 }
